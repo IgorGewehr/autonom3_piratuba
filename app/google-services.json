@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "717089073992",
+    "project_id": "piratuba-explorer",
+    "storage_bucket": "piratuba-explorer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717089073992:android:4acdc5065a39bf222a217d",
+        "android_client_info": {
+          "package_name": "com.example.autonom3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717089073992-k5hjapknv3r14hcmhk090pc1vc7da269.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbDTvnTCGiq2Oqvl6joeDEc5mqGY6H89c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717089073992-k5hjapknv3r14hcmhk090pc1vc7da269.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
