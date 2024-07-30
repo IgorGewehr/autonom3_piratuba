@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.autonom3.pages.AppNavigation
 import com.example.autonom3.ui.theme.Autonom3Theme
 import com.example.autonom3.pages.LoginPage
 
@@ -22,26 +23,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             Autonom3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LoginPage (onLoginClick = {}, modifier = Modifier.padding(innerPadding))
-
+                    AppNavigation(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Autonom3Theme {
-        Greeting("Android")
-    }
-}

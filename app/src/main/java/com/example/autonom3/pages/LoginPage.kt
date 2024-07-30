@@ -40,11 +40,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalAnimationApi::class)
 @Composable
-fun LoginPage(onLoginClick: () -> Unit, modifier: Modifier) {
+fun LoginPage(onLoginClick: () -> Unit, modifier: Modifier = Modifier) {
 
     val backgroundImages = listOf(
         R.drawable.piratuba4,
