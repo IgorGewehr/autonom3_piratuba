@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,13 +22,17 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.autonom3.R
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.navigation.NavController
 import com.example.autonom3.classes.MenuParams
 import com.example.autonom3.composables.MenuSquares
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalAnimationApi::class)
 @Composable
-fun DiscoverPage(modifier: Modifier = Modifier){
+fun DiscoverPage(modifier: Modifier = Modifier, navController: NavController){
     val menuItems = listOf(
         MenuParams("Restaurantes", painterResource(id = R.drawable.piratuba5)),
         MenuParams("Hoteis", painterResource(id = R.drawable.piratuba6)),
@@ -72,8 +77,10 @@ fun DiscoverPage(modifier: Modifier = Modifier){
                         .fillMaxWidth()
                         .padding(8.dp), // Padding adicional ao redor dos quadrados
                     onClickFunction = { /* Ação ao clicar */ },
+                    navController = navController,
                     info = item
                 )
+
             }
         }
     }

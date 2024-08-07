@@ -70,6 +70,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    implementation("com.google.android.libraries.places:places:3.5.0")
 
 
     // TODO: Add the dependencies for Firebase products you want to use
